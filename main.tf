@@ -8,12 +8,12 @@ terraform {
 }
 
 resource "scalr_environment" "test" {
-  name = "test-environment"
+  name = var.environment_name
 }
 
 resource "scalr_workspace" "test" {
   environment_id = scalr_environment.test.id
-  name = "test-workspace"
+  name = var.workspace_name
 }
 
 output "environment_id" {
