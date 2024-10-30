@@ -1,5 +1,5 @@
 provider "aws" {
-  # comment
+  # comments
   region = "us-east-1"
 }
 
