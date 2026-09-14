@@ -13,7 +13,7 @@ resource "scalr_environment" "test" {
 
 resource "scalr_workspace" "test" {
   environment_id = scalr_environment.test.id
-  name = "test-workspace"
+  name = "test-workspace-2"
 }
 
 output "environment_id" {
